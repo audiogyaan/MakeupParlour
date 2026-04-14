@@ -2126,3 +2126,205 @@ img {
         font-size: 5.5rem;
     }
 }
+/* MOBILE NAVBAR FIX */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 0.75rem;
+        padding: 5px 8px;
+    }
+
+    .call-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+/* SLIDER FIX FOR MOBILE */
+.auto-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 25s linear infinite;
+}
+
+/* mobile behavior */
+@media (max-width: 768px) {
+
+    .slide-card {
+        width: 220px;
+        height: 300px;
+        margin: 0 10px;
+    }
+
+    .slider-track {
+        animation-duration: 40s; /* slow for mobile */
+    }
+}
+@media (max-width: 768px) {
+
+    .hero {
+        padding-top: 120px;
+        min-height: auto;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 768px) {
+
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .bridal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bridal-gallery {
+        flex-direction: column;
+    }
+
+    .bridal-gallery img {
+        width: 100%;
+    }
+}
+html, body {
+    overflow-x: hidden;
+}
+.contact-section {
+    padding: 120px 10%;
+    background: radial-gradient(circle at center, rgba(212,175,55,0.08), transparent 60%),
+                linear-gradient(#050505, #0a0a0a);
+    text-align: center;
+}
+
+/* Main Box */
+.contact-box {
+    display: inline-block;
+    padding: 50px 60px;
+    border-radius: 30px;
+    
+    /* Glass + Gold Premium Look */
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 
+        0 20px 60px rgba(0,0,0,0.6),
+        inset 0 0 30px rgba(212, 175, 55, 0.05);
+
+    transition: 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Golden Glow Border Animation */
+.contact-box::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, transparent, rgba(212,175,55,0.4), transparent);
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.5;
+}
+
+/* Hover Effect */
+.contact-box:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(212,175,55,0.6);
+    box-shadow: 
+        0 30px 80px rgba(0,0,0,0.7),
+        0 0 30px rgba(212,175,55,0.2);
+}
+
+/* Heading */
+.contact-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+/* Text */
+.contact-box p {
+    color: #ccc;
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+/* Social Links */
+.social-icons {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.social-icons a {
+    color: #d4af37;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(212,175,55,0.6);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-box {
+        padding: 30px 25px;
+        width: 100%;
+    }
+
+    .contact-box h2 {
+        font-size: 1.8rem;
+    }
+}

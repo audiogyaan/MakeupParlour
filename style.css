@@ -2329,4 +2329,63 @@ html, body {
     }
 }
 
-   
+.auto-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* 📱 MOBILE VIEW - BIGGER SERVICE CARDS */
+@media(max-width:768px){
+
+    .premium-cards .card{
+        width:95%;
+        padding:25px;
+    }
+
+    .premium-cards .img-box img{
+        width:100%;
+        height:220px;   /* 👈 image bigger */
+        object-fit:cover;
+        border-radius:12px;
+    }
+
+    .premium-cards h3{
+        font-size:18px;
+        margin-top:10px;
+    }
+
+    .premium-cards p{
+        font-size:14px;
+    }
+}
+.premium-cards .img-box img{
+    height:250px;
+}
+/* 📱 MOBILE - FULL WIDTH CARDS */
+@media(max-width:768px){
+
+    .premium-cards .card{
+        width:100%;          /* 👈 full width */
+        max-width:100%;
+        padding:20px;
+        border-radius:12px;
+    }
+
+    .card-container{
+        padding:0 10px;      /* side gap thoda rakhega */
+    }
+}

@@ -2389,3 +2389,88 @@ html, body {
         padding:0 10px;      /* side gap thoda rakhega */
     }
 }
+/* GALLERY SECTION */
+.gallery-section {
+  padding: 80px 5%;
+  background: #fff; /* Colorful background */
+  text-align: center;
+}
+
+.gallery-section .section-title {
+  color: #333; /* Dark text color */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+.gallery-section {
+  padding: 80px 5%;
+  background: #050505; /* Dark luxury background */
+  text-align: center;
+}
+
+.gallery-section .section-title {
+  color: #d4af37; /* Gold heading */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* 🔥 COLORFUL IMAGE */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: none; /* ❌ grayscale removed */
+  transition: 0.5s ease;
+}
+
+/* ✨ Hover Effect (Premium look) */
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* 🌈 Optional: Color Boost */
+.gallery-item img {
+  filter: contrast(110%) saturate(120%);
+}
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}

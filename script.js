@@ -15,5 +15,5 @@ window.addEventListener('scroll', () => {
 
 // Click effect on buttons
 document.querySelector('.call-btn').addEventListener('click', () => {
-    alert("Calling Glamour Haven...");
+    alert("Calling SHRADDHA MAKEOVER ...");
 });
